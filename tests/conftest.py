@@ -1,13 +1,5 @@
 import pytest
 
-"""
-TODO: Fix the structure as this shouldnt really be needed to allow for tests to run.
-"""
-import os
-import sys
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
 
 @pytest.fixture
 def vatsim_data_general_blob() -> dict[str, any]:

@@ -2,7 +2,7 @@ from unittest.mock import Mock, create_autospec
 
 import pytest
 
-from src.pyvatsim import Facility, VatsimLiveAPI, Rating, PilotRating, Server
+from pyvatsim import Facility, VatsimLiveAPI, Rating, PilotRating, Server
 
 
 @pytest.fixture
