@@ -5,7 +5,7 @@ authors = [
   "Ken Greim <ken.greim+vatsimapi@gmail.com>",
 ]
 description = "Library to access Vatsim live data and APIs"
-readme = "README.md"
+readme = "readme.md"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
@@ -22,7 +22,14 @@ requests = "^2.28"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.4"
+pytest-cov = "^4.1.0"
 ruff = "^0.1.9"
+
+[tool.pytest.ini_options]
+addopts = "--cov=pyvatsim"
+testpaths = [
+    "tests",
+]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
