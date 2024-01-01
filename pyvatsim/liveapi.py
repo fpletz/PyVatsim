@@ -9,9 +9,7 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
 
-
-# Constants
-STATUS_JSON_URL = "https://status.vatsim.net/status.json"
+from .constants import STATUS_JSON_URL
 
 
 class UpdateMode(Enum):
